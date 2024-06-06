@@ -3,7 +3,15 @@ import BDList from './BDList'
 import { Database } from './Database'
 const Birthday = () => {
     const [data,setData]=useState(Database)
-    const [bdcounter,setBdcounter]=useState(data.length)
+    const [bdcounter, setBdcounter] = useState(data.length)
+    const DeletePerson = (id) =>
+    {
+        const newarray = data.filter((items, index) =>
+        {
+            return items.id!=id
+        })
+        setData(newarray)
+        }
   return (
       <>
           <div   className='Birthday-con p-4 rounded-5 container shadow col-lg-4  d-flex flex-column gap-3'>
@@ -14,7 +22,7 @@ const Birthday = () => {
               {data.map((items, index) =>
               {
                   return <>
-                      <BDList key={items.id} {...items} />
+                      <BDList key={items.id} {...items} remove={ DeletePerson } />
                   </>
                     
               })}

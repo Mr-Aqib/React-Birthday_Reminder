@@ -19,3 +19,8 @@
 .bdlist {
   background: rgb(99, 70, 139);
 }
+.Birthday-con {
+  height: max-contents;
+
+  overflow-y: hidden;
+}

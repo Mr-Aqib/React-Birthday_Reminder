@@ -1,6 +1,6 @@
 import React from 'react'
 
-const BDList = ({id,Name,Age,image}) => {
+const BDList = ({id,Name,Age,image,remove}) => {
   return (
       <div  className='bdlist shadow  border border-secondary p-3 rounded-4 d-flex flex-row align-items-center justify-content-between ' >
           <div className='d-flex flex-row align-items-center justify-content-center gap-3'>
@@ -11,7 +11,7 @@ const BDList = ({id,Name,Age,image}) => {
                   <p className='text-white m-0 p-0'>{Age } years Old</p>
               </div>
           </div>
-          <button className="d-flex self-align-center btn btn-danger">
+          <button className="d-flex self-align-center btn btn-danger" onClick={()=> remove (id)}>
               Delte
           </button>
     </div>
