@@ -4,7 +4,7 @@ import './Birthday-Reminder/bdstyle.css'
 const App = () => {
   return (
     <>
-      <div className='main d-flex align-items-center justify-content-center'>
+      <div   className='main d-flex align-items-center justify-content-center'>
         <Birthday />
         </div>
     </>

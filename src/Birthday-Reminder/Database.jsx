@@ -27,4 +27,11 @@ export const Database = [
         image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjUlz1U0tD1XCrGV3h1cajmk1lhVFru9Qabg&s"
 
     },
+    {
+        id:19,
+        Name:'ilbert',
+        Age:40,
+        image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjUlz1U0tD1XCrGV3h1cajmk1lhVFru9Qabg&s"
+
+    },
 ]
