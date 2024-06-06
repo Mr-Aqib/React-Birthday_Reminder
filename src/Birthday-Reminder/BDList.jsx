@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { FaTrash } from "react-icons/fa";
 const BDList = ({id,Name,Age,image,remove}) => {
   return (
       <div  className='bdlist shadow  border border-secondary p-3 rounded-4 d-flex flex-row align-items-center justify-content-between ' >
@@ -11,8 +11,8 @@ const BDList = ({id,Name,Age,image,remove}) => {
                   <p className='text-white m-0 p-0'>{Age } years Old</p>
               </div>
           </div>
-          <button className="d-flex self-align-center btn btn-danger" onClick={()=> remove (id)}>
-              Delte
+          <button className="d-flex self-align-center btn" onClick={()=> remove (id)}>
+             <FaTrash className='text-danger' style={{fontSize:'24px'}} />
           </button>
     </div>
   )
