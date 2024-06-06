@@ -1,0 +1,21 @@
+.main {
+  background: rgb(59, 62, 100);
+  background: linear-gradient(
+    90deg,
+    rgba(59, 62, 100, 1) 0%,
+    rgba(123, 5, 196, 1) 42%,
+    rgba(146, 98, 117, 1) 100%
+  );
+  height: 100vh;
+}
+.Birthday-con {
+  background: rgb(69, 40, 111);
+  background: radial-gradient(
+    circle,
+    rgba(69, 40, 111, 1) 0%,
+    rgba(130, 29, 124, 1) 100%
+  );
+}
+.bdlist {
+  background: rgb(99, 70, 139);
+}
